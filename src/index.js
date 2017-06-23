@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const REPLACER = '</head>';
+const REPLACER = '</body>';
 const CHARSET = 'utf-8';
 
 export default class StatisticInjectorWebpackPlugin {
