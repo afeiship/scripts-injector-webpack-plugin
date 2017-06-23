@@ -16,6 +16,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var REPLACER = '</head>';
+var CHARSET = 'utf-8';
 
 var StatisticInjectorWebpackPlugin = function () {
   function StatisticInjectorWebpackPlugin(inOptions) {
@@ -33,7 +34,8 @@ var StatisticInjectorWebpackPlugin = function () {
     value: function apply(compiler) {
       var path = this.options.path;
 
-      var statisString = _fs2.default.readFileSync(path, 'utf8');
+      var statisString = _fs2.default.readFileSync(path, CHARSET);
+
       compiler.plugin('compilation', function (compilation) {
         var _this = this;
 
