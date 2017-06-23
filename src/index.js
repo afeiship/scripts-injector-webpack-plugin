@@ -1,10 +1,12 @@
-const replacer = '</head>';
+import fs from 'fs';
+
+const REPLACER = '</head>';
 
 export default class StatisticInjectorWebpackPlugin {
   constructor(inOptions){
     this.options =  Object.assign({
       callback: (inHtml,inString)=>{
-        return inHtml.replace(replacer,`${inString}${replacer}`);
+        return inHtml.replace(REPLACER,`${inString}${REPLACER}`);
       }
     },inOptions);
   }
