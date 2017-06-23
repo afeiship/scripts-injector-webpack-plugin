@@ -35,8 +35,10 @@ var StatisticInjectorWebpackPlugin = function () {
 
       var statisString = _fs2.default.readFileSync(path, 'utf8');
       compiler.plugin('compilation', function (compilation) {
+        var _this = this;
+
         compilation.plugin('html-webpack-plugin-before-html-processing', function (htmlPluginData, callback) {
-          htmlPluginData.html = this.options.callback(htmlPluginData.html, statisString);
+          htmlPluginData.html = _this.options.callback(htmlPluginData.html, statisString);
           callback(null, htmlPluginData);
         });
       });
