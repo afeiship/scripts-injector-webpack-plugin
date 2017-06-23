@@ -17,7 +17,7 @@ export default class StatisticInjectorWebpackPlugin {
     const { path } = this.options;
     const statisString = fs.readFileSync( path , CHARSET);
     
-    compiler.plugin('compilation',function(compilation){
+    compiler.plugin('compilation',(compilation)=>{
       compilation.plugin('html-webpack-plugin-before-html-processing', (htmlPluginData, callback)=>{
         htmlPluginData.html = this.options.callback(htmlPluginData.html, statisString);
         callback(null, htmlPluginData);

@@ -32,13 +32,13 @@ var StatisticInjectorWebpackPlugin = function () {
   _createClass(StatisticInjectorWebpackPlugin, [{
     key: 'apply',
     value: function apply(compiler) {
+      var _this = this;
+
       var path = this.options.path;
 
       var statisString = _fs2.default.readFileSync(path, CHARSET);
 
       compiler.plugin('compilation', function (compilation) {
-        var _this = this;
-
         compilation.plugin('html-webpack-plugin-before-html-processing', function (htmlPluginData, callback) {
           htmlPluginData.html = _this.options.callback(htmlPluginData.html, statisString);
           callback(null, htmlPluginData);
