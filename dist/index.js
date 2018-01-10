@@ -22,9 +22,10 @@ var StatisticInjectorWebpackPlugin = function () {
   function StatisticInjectorWebpackPlugin(inOptions) {
     _classCallCheck(this, StatisticInjectorWebpackPlugin);
 
+    var replacer = inOptions.replacer || REPLACER;
     this.options = Object.assign({
       callback: function callback(inHtml, inString) {
-        return inHtml.replace(REPLACER, '' + inString + REPLACER);
+        return inHtml.replace(replacer, '' + inString + replacer);
       }
     }, inOptions);
   }
