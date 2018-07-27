@@ -8,10 +8,9 @@ npm install afeiship/scripts-injector-webpack-plugin
 
 ## usage:
 ```js
-new StatisticInjectorWebpackPlugin({
-  path:'YOUR_SCRIPT_FILEPATH',
-  callback: function(html,filestr){
-    return html.replace('</head>',`${filestr}</head>`);
+new ScriptsInjectorWebpackPlugin({
+  replacements:function(inHtml){
+    return inHtml.replace('</body>','<!--YOUR CODE--></body>')
   }
 })
 ```
