@@ -9,9 +9,11 @@ npm install afeiship/scripts-injector-webpack-plugin
 ## usage:
 ```js
 new ScriptsInjectorWebpackPlugin({
-  replacements:function(inHtml){
-    return inHtml.replace('</body>','<!--YOUR CODE--></body>')
-  }
+  replacements:[
+    function(inHtml){
+      return inHtml.replace('</body>','<!--YOUR CODE--></body>')
+    }
+  ]
 })
 ```
 
