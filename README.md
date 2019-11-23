@@ -3,7 +3,7 @@
 
 ## install:
 ```bash
-npm install afeiship/scripts-injector-webpack-plugin
+npm install @feizheng/scripts-injector-webpack-plugin
 ```
 
 ## usage:
