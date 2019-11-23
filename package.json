@@ -8,5 +8,8 @@
   "license": "MIT",
   "devDependencies": {
     "@feizheng/rake-git": "^1.2.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
