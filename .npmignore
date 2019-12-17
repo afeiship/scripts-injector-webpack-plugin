@@ -6,3 +6,8 @@ static
 .gitignore
 yarn.lock
 test
+
+
+.editorconfig
+Gemfile
+Rakefile

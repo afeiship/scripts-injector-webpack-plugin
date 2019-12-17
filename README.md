@@ -1,12 +1,12 @@
 # scripts-injector-webpack-plugin
 > Scripts injector webpack plugin.
 
-## install:
+## installation
 ```bash
-npm install @feizheng/scripts-injector-webpack-plugin
+npm install -D @feizheng/scripts-injector-webpack-plugin
 ```
 
-## usage:
+## usage
 ```js
 new ScriptsInjectorWebpackPlugin({
   replacements:[
@@ -17,11 +17,10 @@ new ScriptsInjectorWebpackPlugin({
 })
 ```
 
-
-## resource:
+## resources
 + http://www.cnblogs.com/haogj/p/5649670.html
 + http://www.cnblogs.com/haogj/p/5160821.html
 
 
-## dependences:
+## dependences
 + MUST IMPORT `html-webpack-plugin`
