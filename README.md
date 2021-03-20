@@ -3,7 +3,7 @@
 
 ## installation
 ```bash
-npm install -D @feizheng/scripts-injector-webpack-plugin
+npm install @jswork/scripts-injector-webpack-plugin
 ```
 
 ## usage
@@ -18,9 +18,9 @@ new ScriptsInjectorWebpackPlugin({
 ```
 
 ## resources
-+ http://www.cnblogs.com/haogj/p/5649670.html
-+ http://www.cnblogs.com/haogj/p/5160821.html
+- http://www.cnblogs.com/haogj/p/5649670.html
+- http://www.cnblogs.com/haogj/p/5160821.html
 
 
 ## dependences
-+ MUST IMPORT `html-webpack-plugin`
+- MUST IMPORT `html-webpack-plugin`

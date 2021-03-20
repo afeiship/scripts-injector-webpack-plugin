@@ -1,15 +1,19 @@
 {
-  "name": "@feizheng/scripts-injector-webpack-plugin",
-  "version": "1.0.1",
+  "name": "@jswork/scripts-injector-webpack-plugin",
+  "version": "1.0.0",
   "description": "Scripts injector webpack plugin.",
   "main": "lib/index.js",
   "repository": "git@github.com:afeiship/scripts-injector-webpack-plugin.git",
   "author": "feizheng <1290657123@qq.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@feizheng/rake-git": "^1.2.0"
-  },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "release-it": "^14.4.1"
   }
 }

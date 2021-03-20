@@ -9,5 +9,4 @@ test
 
 
 .editorconfig
-Gemfile
-Rakefile
+.release-it.json
